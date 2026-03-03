@@ -1,0 +1,143 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" --include "C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_mc.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig_sim.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ipshared/fc61/mem_controller.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mem_controller_0_0/sim/design_1_mem_controller_0_0.v" \
+
+sv xil_defaultlib  --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" --include "C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_axi_vip_0_0/sim/design_1_axi_vip_0_0_pkg.sv" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_axi_vip_0_0/sim/design_1_axi_vip_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" --include "C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_4/sim/design_1_auto_pc_4.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_us_1/sim/design_1_auto_us_1.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_us_2/sim/design_1_auto_us_2.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_5/sim/design_1_auto_pc_5.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_us_3/sim/design_1_auto_us_3.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_6/sim/design_1_auto_pc_6.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_us_4/sim/design_1_auto_us_4.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_ds_1/sim/design_1_auto_ds_1.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_ds_2/sim/design_1_auto_ds_2.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_ds_3/sim/design_1_auto_ds_3.v" \
+"../../../../DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_auto_pc_3/sim/design_1_auto_pc_3.v" \
+"../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" --include "C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../DDR_GOLDEN.srcs/sim_1/imports/proj/part3_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

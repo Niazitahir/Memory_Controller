@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_mem_controller_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>M_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:master>
+        <spirit:addressSpaceRef spirit:addressSpaceRef="M_AXI"/>
+      </spirit:master>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_AWADDR</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_AWVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_AWREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_WDATA</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_WSTRB</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_WVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_WREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_BRESP</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_BVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>M_AXI_BREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PROTOCOL</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.PROTOCOL">AXI4LITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">81247969</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.ID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ADDR_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.ADDR_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>AWUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.AWUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ARUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.ARUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.WUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.RUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>BUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.BUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.READ_WRITE_MODE">WRITE_ONLY</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_LOCK</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_LOCK">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_PROT</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_PROT">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_CACHE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_CACHE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_QOS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_QOS">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_REGION</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_REGION">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_WSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_WSTRB">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_BRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_RRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.HAS_RRESP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.SUPPORTS_NARROW_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.NUM_READ_OUTSTANDING">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.NUM_WRITE_OUTSTANDING">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MAX_BURST_LENGTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.MAX_BURST_LENGTH">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.PHASE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.CLK_DOMAIN">design_1_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.NUM_READ_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.NUM_WRITE_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.RUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.WUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M_AXI.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_AWADDR</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_AWVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_AWREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_WDATA</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_WSTRB</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_WVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_WREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_BRESP</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_BVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_BREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_ARADDR</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_ARVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_ARREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_RDATA</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_RRESP</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_RVALID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>S_AXI_RREADY</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PROTOCOL</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.PROTOCOL">AXI4LITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">81247969</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.ID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ADDR_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.ADDR_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>AWUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.AWUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ARUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.ARUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.WUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.RUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>BUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.BUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.READ_WRITE_MODE">READ_WRITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_LOCK</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_LOCK">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_PROT</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_PROT">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_CACHE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_CACHE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_QOS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_QOS">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_REGION</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_REGION">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_WSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_WSTRB">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_BRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_RRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.HAS_RRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.SUPPORTS_NARROW_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.NUM_READ_OUTSTANDING">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.NUM_WRITE_OUTSTANDING">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MAX_BURST_LENGTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.MAX_BURST_LENGTH">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.PHASE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN">design_1_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.NUM_READ_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.NUM_WRITE_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.RUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.WUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S_AXI.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aresetn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ARESETN.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>aclk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_BUSIF">M_AXI:S_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_RESET">aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">81247969</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.PHASE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.CLK_DOMAIN">design_1_mig_7series_0_0_ui_clk</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ACLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:addressSpaces>
+    <spirit:addressSpace>
+      <spirit:name>M_AXI</spirit:name>
+      <spirit:range spirit:format="long" spirit:resolve="user" spirit:minimum="4096" spirit:rangeType="long">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="user">32</spirit:width>
+    </spirit:addressSpace>
+  </spirit:addressSpaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>reg0</spirit:name>
+        <spirit:baseAddress spirit:format="bitString" spirit:resolve="user" spirit:bitStringLength="32">0</spirit:baseAddress>
+        <spirit:range spirit:format="long" spirit:resolve="user" spirit:minimum="4096" spirit:rangeType="long">4294967296</spirit:range>
+        <spirit:width spirit:format="long" spirit:resolve="user">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>mem_controller</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Mar 03 20:06:07 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:49f1ba9f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_mem_controller_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Mar 03 20:06:07 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:49f1ba9f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>mem_controller</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Mar 03 20:06:07 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:58bae109</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>design_1_mem_controller_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Mar 03 20:06:07 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:58bae109</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Mar 03 20:06:15 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:49f1ba9f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_AWADDR</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_AWVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_AWREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_WDATA</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_WSTRB</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_WVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_WREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_BRESP</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_BVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_BREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_ARADDR</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_ARVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_ARREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_RDATA</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_RRESP</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_RVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>S_AXI_RREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_AWADDR</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_AWVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_AWREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_WDATA</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_WSTRB</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_WVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_WREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_BRESP</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_BVALID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>M_AXI_BREADY</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/028a/mem_controller.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_mem_controller_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/028a/mem_controller.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_mem_controller_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_mem_controller_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_mem_controller_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_mem_controller_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_mem_controller_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_mem_controller_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>mem_controller_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_mem_controller_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>mem_controller_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>23</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dcc8a87_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@426df2a0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e8bc993_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6993e444_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fa3b31_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@168bbcdc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6527d139_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5427d7c7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@be18015_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2981fa35_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a21cd6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a7371f9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20ab15d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ca6558f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20638f1a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fa48d1c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a991db7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@792cc554_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18fe7e5e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e1caf58_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cdaa2e0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@87013a7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31bfc283_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c394a44_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@618afd4f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6549a05d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a7dd92_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b0ea01d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7740bab2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@238d3efa_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bf0af67_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f9ea16_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ada7db_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15c33208_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41db9cbc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494ef68_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3727fb6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fb0628b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b2b89bb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@141f0737_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d69db9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43165258_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b2cbffa_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12c8a757_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c84a342_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37816882_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64284f40_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14849705_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15768a15_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3578bc47_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f7d8b7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b8bc5e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@705f2cd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d63bb91_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7188e285_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@328d2fad_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f003a86_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f03b970_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b9ba05d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263fc26b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35314355_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eb5c924_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b7e1d7b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa76141_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20482c08_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@697804cf_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24025d52_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fee1305_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@136ba8a6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d73ead3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d3605fe_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa6f7c3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec8ef42_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50191ec5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1acae02d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7abd903f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@727a3aa1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1de210cb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34a35325_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39754fdd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a2295f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55d29f40_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d43a1b6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b44673e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@142e07ae_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cf212f6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ec7530_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a0219db_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be3c70d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ac8ff54_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c11e31b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d6ca11_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65d4afe_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36244ca1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36dc446a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e63ee4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3298a472_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cdd0733_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@407405e4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a78f315_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40383ee7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3154bd70_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa8ff9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b6a8327_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@404e612b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1badff94_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@286af094_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@518eccb0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e975b59_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@184bd912_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25b0ab6a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c01ddbb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6547bfdd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42726208_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@590848f3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c3cea3f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4666780d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ed92468_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b78279d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@365e371a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd715bb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74fd9b92_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ad4def4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6074455b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c55005e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@321ba83d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a2556ad_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48183b30_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@185d49d0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77685640_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b94c396_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d542e1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@600a086_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b7128e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78046c4d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fe6caab_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28916c05_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@238e18db_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41a6be94_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3512350c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4259ad47_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54ba282b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b51a94f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cf74fdf_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61483436_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5eb2c1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cea0881_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e12be07_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@112c59f9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23853064_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@518f5b58_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28e4f773_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e3b47f1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f9fe827_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bcdd074_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c39fa5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7992ff51_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225b4808_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11707970_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@221e2e84_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d7d25b9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12a29e75_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53a329a2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69330894_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7004c819_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@407ad9c8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@521827c4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bbc5420_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eb0228b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ddefc7f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@abd889e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f4042f6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59698fd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9d157c3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@504322c2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3ef520_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e468cfa_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eb7172_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3300ed1b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40cd65ff_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26149aaf_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@566a0d43_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a934a25_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@389563e9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a6b230e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@324e39bc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c49d05f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4601c742_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15940613_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@119b4768_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41cc243c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23605824_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67f8eb8f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@402e4691_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f23d650_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d54a7ef_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b48f03_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b975522_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@503932a8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b00e1e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52c3cb89_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46e7ae50_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@700b4c55_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@398563e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@423674a5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bbe0a31_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c930457_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71accb86_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6728d40e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f75315_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68a6dbaf_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b849be3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4efd8a9a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d1e8962_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12b5548a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@605585a2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a84d91b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ddda01_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19e3edae_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5acf211d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cb011ee_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1136aca4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b18c1cd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce6ee08_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53f60025_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12077afe_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32d5cded_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7150613e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dc619da_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cf8fe5a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37a00a92_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@144f81b3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ee4594f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@789a40d8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a5bf5d3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7645c1a9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ddeed7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b9027f6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f52652b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd62b16_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e4d0c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bcb01e7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b3cfec_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@94f87d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fceab58_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f0f0a61_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19fcf90d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24178850_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5abee1db_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ef69ea7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c481429_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b226234_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4387e60a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36de9597_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34658ab7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ffc58b6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10f645a2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2a2d4b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e4a8d9d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a8af9f5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30934f88_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15901a72_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ca1a279_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61d506e2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a26bf7a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f24b7d6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c3f3449_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39c30643_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28d2fe56_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56068cb3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cc72cf8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6747d542_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@114e8a26_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47dd37c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e99aedc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72e29dba_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ac260cb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c6042c1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57bfc53d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e209c7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45831dae_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@793adb5f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fffc7ae_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ffd9f36_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ADDR_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.DATA_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_LOCK" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_PROT" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_QOS" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_RRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.HAS_WSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.MAX_BURST_LENGTH" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.ADDR_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.DATA_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_LOCK" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_PROT" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_QOS" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_RRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_WSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.ID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.MAX_BURST_LENGTH" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="560e8428"/>
+      <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="fa820a90"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="f2afdf52"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ee2fec1"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="268cdc57"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="de7d1d3b"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

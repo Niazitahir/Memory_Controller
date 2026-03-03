@@ -1,0 +1,58 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port ddr2_sdram -pg 1 -y -320 -defaultsOSRD
+preplace port resetn -pg 1 -y 110 -defaultsOSRD
+preplace port usb_uart -pg 1 -y -400 -defaultsOSRD
+preplace port clk -pg 1 -y -200 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 2 -y -370 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 4 -y -210 -defaultsOSRD
+preplace inst rst_clk_100M -pg 1 -lvl 2 -y -30 -defaultsOSRD
+preplace inst mem_controller_0 -pg 1 -lvl 5 -y 180 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 130 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -y 190 -defaultsOSRD
+preplace inst axi_vip_1 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y -200 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 2 -y -520 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 2 -y -200 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -y 150 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 6 -y 180 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y -210 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 7 -y 190 -defaultsOSRD
+preplace netloc axi_intc_0_interrupt 1 1 2 360 -600 1040
+preplace netloc mig_7series_0_mmcm_locked 1 0 5 -60 410 NJ 410 NJ 410 NJ 410 1630
+preplace netloc mig_7series_0_DDR2 1 4 5 1670J -320 NJ -320 NJ -320 NJ -320 NJ
+preplace netloc axi_vip_1_M_AXI 1 3 1 1310
+preplace netloc axi_interconnect_1_M01_AXI 1 3 4 1330 360 NJ 360 NJ 360 2180
+preplace netloc axi_uartlite_0_interrupt 1 1 2 370 70 1000
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N
+preplace netloc mem_controller_0_M_AXI 1 5 1 1900
+preplace netloc axi_interconnect_0_M02_AXI 1 1 4 340 370 NJ 370 NJ 370 1610
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 7 1 N
+preplace netloc microblaze_0_ilmb_1 1 2 1 1030
+preplace netloc microblaze_0_M_AXI_DP 1 2 2 1030J -130 1290
+preplace netloc mig_7series_0_ui_clk 1 0 7 -70 30 320 80 1050 -10 1280 400 1650 20 1880 0 2200
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 5 N 150 N 150 1320 390 1670J 100 1870J
+preplace netloc sys_clk_i_0_1 1 0 4 -70J -270 290J 100 1020J -310 1290J
+preplace netloc resetn_1 1 0 4 -70J 230 330 120 1040 -300 1280
+preplace netloc axi_uartlite_0_UART 1 2 7 NJ -530 NJ -530 NJ -530 NJ -530 NJ -530 NJ -530 2710J
+preplace netloc axi_interconnect_0_M00_AXI 1 4 2 1640 70 NJ
+preplace netloc rst_clk_100M_bus_struct_reset 1 2 1 1060
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 6 300 110 1060 0 1300 380 1660 90 1890 10 2190J
+preplace netloc microblaze_0_dlmb_1 1 2 1 1010
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1640
+preplace netloc rst_clk_100M_mb_reset 1 1 2 380 90 990
+preplace netloc microblaze_0_debug 1 1 1 N
+preplace netloc axi_interconnect_1_M00_AXI 1 6 1 N
+preplace netloc mdm_1_debug_sys_rst 1 1 1 310
+preplace netloc axi_interconnect_0_M03_AXI 1 1 4 350 -610 NJ -610 NJ -610 1620
+levelinfo -pg 1 -90 120 760 1180 1470 1770 2040 2330 2590 2730 -top -620 -bot 540
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"2",
+   "da_mb_cnt":"2"
+}

@@ -1,0 +1,136 @@
+23:49:25 INFO  : Registering command handlers for SDK TCF services
+23:49:26 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\khanm\AppData\Roaming\Xilinx\Vivado\proj\proj_p3.sdk\temp_xsdb_launch_script.tcl
+23:49:29 INFO  : XSCT server has started successfully.
+23:49:33 INFO  : Successfully done setting XSCT server connection channel  
+23:49:33 INFO  : Successfully done setting SDK workspace  
+23:49:33 INFO  : Processing command line option -hwspec C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf.
+23:56:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\khanm\AppData\Roaming\Xilinx\Vivado\proj\proj_p3.sdk\temp_xsdb_launch_script.tcl
+23:56:37 INFO  : XSCT server has started successfully.
+23:56:37 INFO  : Successfully done setting XSCT server connection channel  
+23:56:38 INFO  : Successfully done setting SDK workspace  
+23:56:39 INFO  : Registering command handlers for SDK TCF services
+23:56:40 INFO  : Processing command line option -hwspec C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf.
+23:56:40 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:56:40 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1772427356212,  Project:1772426423898
+23:56:40 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf.
+23:56:40 INFO  : Copied contents of C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+23:56:40 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:56:40 INFO  : Clearing existing target manager status.
+23:56:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:56:40 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:59:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:59:14 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646118A' is selected.
+23:59:14 INFO  : 'jtag frequency' command is executed.
+23:59:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0' command is executed.
+23:59:16 INFO  : FPGA configured successfully with bitstream "C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:59:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:59:16 INFO  : Context for processor 'microblaze_0' is selected.
+23:59:16 INFO  : System reset is completed.
+23:59:19 INFO  : 'after 3000' command is executed.
+23:59:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:59:19 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+23:59:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0
+fpga -file C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+dow C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/kmllkn/Debug/kmllkn.elf
+----------------End of Script----------------
+
+23:59:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:59:30 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646118A' is selected.
+23:59:30 INFO  : 'jtag frequency' command is executed.
+23:59:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0' command is executed.
+23:59:32 INFO  : FPGA configured successfully with bitstream "C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:59:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:59:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:59:32 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+23:59:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0
+fpga -file C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+rst -processor
+----------------End of Script----------------
+
+00:31:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1772429475365,  Project:1772427356212
+00:31:35 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:31:40 INFO  : Copied contents of C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:31:40 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:31:41 INFO  : 
+00:31:42 INFO  : Updating hardware inferred compiler options for kmllkn.
+00:31:42 INFO  : Clearing existing target manager status.
+00:31:42 INFO  : Closing and re-opening the MSS file of ther project kmllkn_bsp
+00:31:42 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:31:43 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:31:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:31:54 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646118A' is selected.
+00:31:54 INFO  : 'jtag frequency' command is executed.
+00:31:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0' command is executed.
+00:31:56 INFO  : FPGA configured successfully with bitstream "C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:31:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:31:56 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:56 INFO  : System reset is completed.
+00:31:59 INFO  : 'after 3000' command is executed.
+00:31:59 INFO  : Context for processor 'microblaze_0' is selected.
+00:31:59 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+00:31:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0
+fpga -file C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+dow C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/kmllkn/Debug/kmllkn.elf
+----------------End of Script----------------
+
+00:47:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1772430353372,  Project:1772429475365
+00:47:10 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:47:12 INFO  : Copied contents of C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:47:12 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:47:13 INFO  : 
+00:47:14 INFO  : Updating hardware inferred compiler options for kmllkn.
+00:47:14 INFO  : Clearing existing target manager status.
+00:47:14 INFO  : Closing and re-opening the MSS file of ther project kmllkn_bsp
+00:47:14 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:47:15 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:47:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:30 INFO  : Jtag cable 'Digilent Nexys4DDR 210292646118A' is selected.
+00:47:30 INFO  : 'jtag frequency' command is executed.
+00:47:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0' command is executed.
+00:47:32 INFO  : FPGA configured successfully with bitstream "C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+00:47:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:47:32 INFO  : Context for processor 'microblaze_0' is selected.
+00:47:32 INFO  : System reset is completed.
+00:47:36 INFO  : 'after 3000' command is executed.
+00:47:36 INFO  : Context for processor 'microblaze_0' is selected.
+00:47:36 INFO  : The application 'C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/kmllkn/Debug/kmllkn.elf' is downloaded to processor 'microblaze_0'.
+00:47:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A" && level==0} -index 0
+fpga -file C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+dow C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sdk/kmllkn/Debug/kmllkn.elf
+----------------End of Script----------------
+
+00:47:36 INFO  : Context for processor 'microblaze_0' is selected.
+00:47:36 INFO  : 'con' command is executed.
+00:47:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646118A"} -index 0
+con
+----------------End of Script----------------
+
+00:47:36 INFO  : Disconnected from the channel tcfchan#1.

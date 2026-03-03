@@ -1,0 +1,463 @@
+    `timescale 1ns / 1ps
+
+module mem_controller
+(
+    input aclk,
+    input aresetn,
+
+    // AXI-Lite slave interface
+    input [31:0]  S_AXI_AWADDR,
+    input         S_AXI_AWVALID,
+    output        S_AXI_AWREADY,
+
+    input [31:0]  S_AXI_WDATA,
+    input [3:0]   S_AXI_WSTRB,
+    input         S_AXI_WVALID,
+    output        S_AXI_WREADY,
+
+    output [1:0]  S_AXI_BRESP,
+    output        S_AXI_BVALID,
+    input         S_AXI_BREADY,
+
+    input [31:0]  S_AXI_ARADDR,
+    input         S_AXI_ARVALID,
+    output        S_AXI_ARREADY,
+
+    output [31:0] S_AXI_RDATA,
+    output [1:0]  S_AXI_RRESP,
+    output        S_AXI_RVALID,
+    input         S_AXI_RREADY,
+
+    // AXI-Lite master interface
+    output [31:0] M_AXI_AWADDR,
+    output        M_AXI_AWVALID,
+    input         M_AXI_AWREADY,
+
+    output [31:0] M_AXI_WDATA,
+    output [3:0]  M_AXI_WSTRB,
+    output        M_AXI_WVALID,
+    input         M_AXI_WREADY,
+
+    input [1:0]   M_AXI_BRESP,
+    input         M_AXI_BVALID,
+    output        M_AXI_BREADY
+);
+    wire [31:0] val_out;
+    wire init_out;
+    wire [31:0] lsr_in;
+    wire [31:0] lsr_n;
+    wire [31:0] addr;
+    axi_lite_slave slave1 (
+        .clk(aclk),
+        .resetn(aresetn),
+        .S_AXI_AWADDR(S_AXI_AWADDR),
+        .S_AXI_AWVALID(S_AXI_AWVALID),
+        .S_AXI_AWREADY(S_AXI_AWREADY),
+
+        .S_AXI_WDATA(S_AXI_WDATA),
+        .S_AXI_WSTRB(S_AXI_WSTRB),
+        .S_AXI_WVALID(S_AXI_WVALID),
+        .S_AXI_WREADY(S_AXI_WREADY),
+
+        .S_AXI_BRESP(S_AXI_BRESP),
+        .S_AXI_BVALID(S_AXI_BVALID),
+        .S_AXI_BREADY(S_AXI_BREADY),
+
+        .S_AXI_ARADDR(S_AXI_ARADDR),
+        .S_AXI_ARVALID(S_AXI_ARVALID),
+        .S_AXI_ARREADY(S_AXI_ARREADY),
+
+        .S_AXI_RDATA(S_AXI_RDATA),
+        .S_AXI_RRESP(S_AXI_RRESP),
+        .S_AXI_RVALID(S_AXI_RVALID),
+        .S_AXI_RREADY(S_AXI_RREADY),
+        .init_write(init_out),
+        .val_out(lsr_in),
+        .n_lsr(lsr_n),
+        .addr_out(addr)
+    );
+
+    axi_lite_master master1 (
+        .aclk (aclk),
+        .aresetn (aresetn), 
+        .init_write(init_out),
+        .value_out(val_out),
+        .M_AXI_AWADDR (M_AXI_AWADDR),
+        .M_AXI_AWVALID(M_AXI_AWVALID),
+        .M_AXI_AWREADY(M_AXI_AWREADY),
+
+        .M_AXI_WDATA(M_AXI_WDATA),
+        .M_AXI_WSTRB(M_AXI_WSTRB),
+        .M_AXI_WVALID(M_AXI_WVALID),
+        .M_AXI_WREADY(M_AXI_WREADY),
+
+        .M_AXI_BRESP(M_AXI_BRESP),
+        .M_AXI_BVALID(M_AXI_BVALID),
+        .M_AXI_BREADY(M_AXI_BREADY),
+        .addr_in(addr)
+    );
+    lsr532 lsr(
+        .n(lsr_n),
+        .value_in(lsr_in),
+        .value_out(val_out)
+    );
+endmodule
+
+    //cause im pedantic and love complicating things
+    //note, only a single 32bit register for reads and writes
+    //writing more than one thing will overwrite it. 
+module axi_lite_slave (
+    input         clk,
+    input         resetn,
+    input  [31:0] S_AXI_AWADDR,
+    input         S_AXI_AWVALID,
+    output reg    S_AXI_AWREADY,
+
+    input  [31:0] S_AXI_WDATA,
+    input  [3:0]  S_AXI_WSTRB,
+    input         S_AXI_WVALID,
+    output reg    S_AXI_WREADY,
+
+    output reg [1:0] S_AXI_BRESP,
+    output reg       S_AXI_BVALID,
+    input            S_AXI_BREADY,
+
+    input  [31:0] S_AXI_ARADDR,
+    input         S_AXI_ARVALID,
+    output reg    S_AXI_ARREADY,
+
+    output reg [31:0] S_AXI_RDATA,
+    output reg [1:0]  S_AXI_RRESP,
+    output reg        S_AXI_RVALID,
+    input             S_AXI_RREADY,
+
+    // custom signalling
+    output            init_write,
+    output      [31:0] val_out,
+    output      [31:0] n_lsr, 
+    output      [31:0] addr_out
+);
+
+    localparam bits_per_pixel = 8;
+    localparam max_cols       = 3;
+
+    // 3 columns of 3840 bits each
+
+    (* ram_style = "block" *) reg [3839:0] cols [0:2];
+    reg [1:0]    mode;          // 00 = mode change, 01 = byte, 10 = word
+
+    reg [4:0]  n_out;           // XXX8
+    reg [31:0] value_in;        // XXX0
+    reg [31:0] output_addr;     // XXX4
+    reg        mem_fin;
+
+    reg [31:0] awaddr_latched;
+    reg [31:0] araddr_latched;
+
+    // registered address decode for writes
+    reg [31:0] local_offset_r;
+    reg [8:0]  byte_offset_r;
+    reg [11:0] bit_low_r;
+    reg [1:0]  col_index_r;
+
+    // (you can drive these later as needed)
+    assign val_out    = value_in;
+    assign init_write = mem_fin;
+    assign n_lsr      = n_out;
+    assign addr_out   = output_addr;
+
+    // -------------------------
+    // Write address channel (AW)
+    // -------------------------
+// AW handshake
+assign aw_hs = S_AXI_AWVALID && S_AXI_AWREADY;
+
+always @(posedge clk or negedge resetn) begin
+    if (!resetn) begin
+        S_AXI_AWREADY  <= 1'b0;
+        awaddr_latched <= 32'd0;
+    end else begin
+        if (!S_AXI_AWREADY && S_AXI_AWVALID)
+            S_AXI_AWREADY <= 1'b1;
+        else
+            S_AXI_AWREADY <= 1'b0;
+
+        if (aw_hs)
+            awaddr_latched <= S_AXI_AWADDR;
+    end
+end
+
+
+    // -------------------------
+    // Write data channel (W)
+    // -------------------------
+assign w_hs = S_AXI_WVALID && S_AXI_WREADY;
+
+always @(posedge clk or negedge resetn) begin
+    if (!resetn)
+        S_AXI_WREADY <= 1'b0;
+    else if (!S_AXI_WREADY && S_AXI_WVALID)
+        S_AXI_WREADY <= 1'b1;
+    else
+        S_AXI_WREADY <= 1'b0;
+end
+
+
+    // -------------------------
+    // Register write address decode on AW handshake
+    // -------------------------
+    always @(posedge clk or negedge resetn) begin
+        if (!resetn) begin
+            local_offset_r <= 32'd0;
+            byte_offset_r  <= 9'd0;
+            bit_low_r      <= 12'd0;
+            col_index_r    <= 2'd0;
+        end else if (aw_hs) begin
+            // base at 0x80000000
+            local_offset_r <= awaddr_latched - 32'h80000000;
+            col_index_r    <= (awaddr_latched - 32'h80000000) / 480;
+            byte_offset_r  <= (awaddr_latched - 32'h80000000) % 480;
+            bit_low_r      <= ((awaddr_latched - 32'h80000000) % 480) * 8;
+        end
+    end
+    reg [1:0] mode_r;
+    always @(posedge clk) mode_r <= mode;
+
+    // -------------------------
+    // Perform write on W handshake
+    // -------------------------
+   always @(posedge clk or negedge resetn) begin
+    if (!resetn) begin
+        mode <= 2'b00;
+    end else if (w_hs) begin
+        if (awaddr_latched == 32'h80000000) begin
+            mode <= S_AXI_WDATA[1:0];
+        end else begin
+            // use registered decode here
+            if (col_index_r < 3) begin
+                case (mode_r)
+                    2'b01: cols[col_index_r][bit_low_r +: 8]  <= S_AXI_WDATA[7:0];
+                    2'b10: cols[col_index_r][bit_low_r +: 32] <= S_AXI_WDATA[31:0];
+                endcase
+            end
+        end
+    end
+end
+
+
+    // -------------------------
+    // Write response (B)
+    // -------------------------
+    reg aw_hs_done;
+    reg w_hs_done;
+
+    always @(posedge clk or negedge resetn) begin
+        if (!resetn) begin
+            aw_hs_done  <= 1'b0;
+            w_hs_done   <= 1'b0;
+            S_AXI_BVALID <= 1'b0;
+            S_AXI_BRESP  <= 2'b00;
+        end else begin
+            if (aw_hs)
+                aw_hs_done <= 1'b1;
+            if (w_hs)
+                w_hs_done  <= 1'b1;
+
+            if (aw_hs_done && w_hs_done)
+                S_AXI_BVALID <= 1'b1;
+
+            if (S_AXI_BREADY && S_AXI_BVALID) begin
+                S_AXI_BVALID <= 1'b0;
+                aw_hs_done   <= 1'b0;
+                w_hs_done    <= 1'b0;
+            end
+        end
+    end
+
+    // -------------------------
+    // Read address channel (AR)
+    // -------------------------
+    always @(posedge clk or negedge resetn) begin
+        if (!resetn) begin
+            S_AXI_ARREADY  <= 1'b0;
+            araddr_latched <= 32'd0;
+        end else begin
+            if (!S_AXI_ARREADY && S_AXI_ARVALID) begin
+                S_AXI_ARREADY  <= 1'b1;
+                araddr_latched <= S_AXI_ARADDR;
+            end else begin
+                S_AXI_ARREADY <= 1'b0;
+            end
+        end
+    end
+
+    // one‑cycle delayed AR handshake
+    reg ar_hs_d1;
+    always @(posedge clk or negedge resetn) begin
+        if (!resetn)
+            ar_hs_d1 <= 1'b0;
+        else
+            ar_hs_d1 <= (S_AXI_ARREADY && S_AXI_ARVALID);
+    end
+    integer local_offset;
+    integer col_index;
+    integer byte_offset;
+    integer bit_low;
+    // -------------------------
+    // Read data channel (R)
+    // -------------------------
+    always @(posedge clk or negedge resetn) begin
+        if (!resetn) begin
+            S_AXI_RVALID <= 1'b0;
+            S_AXI_RRESP  <= 2'b00;
+            S_AXI_RDATA  <= 32'd0;
+        end else begin
+            if (!S_AXI_RVALID && ar_hs_d1) begin
+                if (araddr_latched == 32'h80000000) begin
+                    S_AXI_RDATA <= {30'd0, mode};
+                end else begin
+                    // local decode for read (can be combinational; read is not timing‑critical)
+
+
+                    local_offset = araddr_latched - 32'h80000000;
+                    col_index    = local_offset / 480;
+                    byte_offset  = local_offset % 480;
+                    bit_low      = byte_offset * 8;
+
+                    S_AXI_RDATA <= 32'd0;
+                    if (col_index < 3) begin
+                        case (mode_r)
+                            2'b01: begin
+                                S_AXI_RDATA[7:0] <= cols[col_index][bit_low +: 8];
+                            end
+                            2'b10: begin
+                                S_AXI_RDATA <= cols[col_index][bit_low +: 32];
+                            end
+                            default: begin
+                                S_AXI_RDATA <= 32'd0;
+                            end
+                        endcase
+                    end
+                end
+                S_AXI_RVALID <= 1'b1;
+            end else if (S_AXI_RVALID && S_AXI_RREADY) begin
+                S_AXI_RVALID <= 1'b0;
+            end
+        end
+    end
+
+endmodule
+
+module axi_lite_master (
+    input         aclk,
+    input         aresetn,
+
+    output reg [31:0] M_AXI_AWADDR,
+    output reg        M_AXI_AWVALID,
+    input             M_AXI_AWREADY,
+
+    output reg [31:0] M_AXI_WDATA,
+    output reg [3:0]  M_AXI_WSTRB,
+    output reg        M_AXI_WVALID,
+    input             M_AXI_WREADY,
+
+    input      [1:0]  M_AXI_BRESP,
+    input             M_AXI_BVALID,
+    output reg        M_AXI_BREADY,
+    //custom signalling
+    input      [31:0] value_out,
+    input         init_write,
+    input       [31:0] addr_in
+);
+    reg [1:0] state;
+    reg [31:0] val_save;
+    reg [31:0] latch_addr;
+    //FSM Three stages
+    localparam ST_AW_W = 2'b00;
+    localparam ST_B    = 2'b01;
+    localparam ST_DONE = 2'b10;
+
+    always @(posedge aclk or negedge aresetn) begin
+        if (!aresetn) begin
+            M_AXI_AWADDR  <= 32'h00000000;
+            M_AXI_AWVALID <= 1'b0;
+            M_AXI_WDATA   <= 32'h00000000;
+            M_AXI_WSTRB   <= 4'hF;
+            M_AXI_WVALID  <= 1'b0;
+            M_AXI_BREADY  <= 1'b0;
+            latch_addr <= 32'h00000000;
+            state         <= ST_DONE;
+        end else begin
+            case (state)
+
+                ST_AW_W: begin
+                latch_addr <= addr_in;
+                    val_save = value_out;    
+                    // drive address + data and hold VALID until handshake
+                    M_AXI_AWADDR  <= latch_addr;   // matches mem[0]
+                    M_AXI_WDATA   <= val_save;
+                    M_AXI_WSTRB   <= 4'hF;
+
+                    if (!M_AXI_AWVALID)
+                        M_AXI_AWVALID <= 1'b1;
+                    if (!M_AXI_WVALID)
+                        M_AXI_WVALID  <= 1'b1;
+
+                    if (M_AXI_AWVALID && M_AXI_AWREADY)
+                        M_AXI_AWVALID <= 1'b0;
+                    if (M_AXI_WVALID && M_AXI_WREADY)
+                        M_AXI_WVALID  <= 1'b0;
+
+                    if ((M_AXI_AWVALID && M_AXI_AWREADY) &&
+                        (M_AXI_WVALID  && M_AXI_WREADY)) begin
+                        M_AXI_BREADY <= 1'b1;
+                        state        <= ST_B;
+                    end
+                end
+
+                ST_B: begin
+                    if (M_AXI_BVALID) begin
+                        M_AXI_BREADY <= 1'b0;
+                        state        <= ST_DONE;
+                    end
+                end
+
+                ST_DONE: begin
+                if (init_write)
+                    state <= ST_AW_W;
+                end
+
+            endcase
+        end
+    end
+
+endmodule
+
+module lsr532
+    (
+    input [4:0] 	n,
+    input [31:0]  value_in,
+    output [31:0] value_out
+    );
+    // n[0] = shift by one, n[1] = shift by 2 etc. 
+    wire [31:0] s1, s2, s4, s8, s16;
+
+    // Rotate by 1
+    assign s1  = n[0] ? {value_in[30:0],  value_in[31]}  : value_in;
+
+    // Rotate by 2
+    assign s2  = n[1] ? {s1[29:0],  s1[31:30]} : s1;
+
+    // Rotate by 4
+    assign s4  = n[2] ? {s2[27:0],  s2[31:28]} : s2;
+
+    // Rotate by 8
+    assign s8  = n[3] ? {s4[23:0],  s4[31:24]} : s4;
+
+    // Rotate by 16
+    assign s16 = n[4] ? {s8[15:0],  s8[31:16]} : s8;
+
+    assign value_out = s16;
+    // Your Code Here
+
+endmodule

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Mar  1 22:30:31 2026
+# Process ID: 25368
+# Current directory: C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sim/sim_1/behav/xsim/xsim.dir/part3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/proj_p3.sim/sim_1/behav/xsim/xsim.dir/part3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar  1 22:30:32 2026...
