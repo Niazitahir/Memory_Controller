@@ -51,7 +51,7 @@
  * application disables D-Caches before running memory tests.
  */
 #define DDR_BASE 0x80000000
-
+#define BRAM_BASE 0xC0000000
 void putnum(unsigned int num);
 
 void test_memory_range(struct memory_range_s *range) {
@@ -99,7 +99,7 @@ int main()
     print("As a result, cacheline requests will not be generated\n\r");
 
     for (i = 0; i < n_memory_ranges; i++) {
-        test_memory_range(&memory_ranges[i]);
+        //test_memory_range(&memory_ranges[i]);
     }
 
     print("--Memory Test Application Complete--\n\r");
@@ -109,10 +109,14 @@ int main()
     ddr[1] = 0xDEADBEEF;   // write 32-bit value
     ddr[3] = 0xDEADBEEF;   // write 32-bit value
     uint32_t x = ddr[2];   // read it back
-    for (i = 0; i<100; i++){
-    	xil_printf("                 Echo: 0x%lx bytes \n\r",ddr[i]);
+    for (i = 0; i<10; i++){
+    	xil_printf("                 SLAVE: 0x%lx bytes \n\r",ddr[i]);
     }
-
+    volatile uint32_t *bram = (uint32_t *)BRAM_BASE;
+    bram[1] = 0xDEAD;
+    for (i = 0; i<10; i++){
+    	xil_printf("                 BRAM: 0x%lx bytes \n\r",bram[i]);
+    }
     cleanup_platform();
     return 0;
 }

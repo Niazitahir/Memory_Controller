@@ -17,11 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7424-DESKTOP-CDKE44D/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,7 +30,10 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_repo_paths c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem [current_project]
+set_property ip_repo_paths {
+  c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem
+  c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/bram_test
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -71,6 +70,7 @@ set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData
 set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_vip_0_0/design_1_axi_vip_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]

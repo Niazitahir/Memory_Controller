@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-//Date        : Tue Mar  3 15:05:50 2026
+//Date        : Wed Mar 11 21:15:19 2026
 //Host        : DESKTOP-CDKE44D running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -26,8 +26,15 @@ module design_1_wrapper
     ddr2_sdram_we_n,
     reset,
     sys_clk_i,
+    test_pass_0,
+    tester_0,
     usb_uart_rxd,
-    usb_uart_txd);
+    usb_uart_txd,
+    bram_a_out, 
+    bram_b_out
+    
+    
+    );
   output [12:0]ddr2_sdram_addr;
   output [2:0]ddr2_sdram_ba;
   output ddr2_sdram_cas_n;
@@ -44,8 +51,12 @@ module design_1_wrapper
   output ddr2_sdram_we_n;
   input reset;
   input sys_clk_i;
+  output test_pass_0;
+  input tester_0;
   input usb_uart_rxd;
   output usb_uart_txd;
+  output bram_a_out;
+  output bram_b_out;
 
   wire [12:0]ddr2_sdram_addr;
   wire [2:0]ddr2_sdram_ba;
@@ -63,11 +74,22 @@ module design_1_wrapper
   wire ddr2_sdram_we_n;
   wire reset;
   wire sys_clk_i;
+  wire test_pass_0;
+  wire tester_0;
   wire usb_uart_rxd;
   wire usb_uart_txd;
-
+  wire [6:0] bram_a_out;
+  wire [7:0] bram_b_out;
+  
+  
+  wire [31:0]a_read_val_sig_0;
+  wire [31:0]b_read_val_sig_0;
+  assign bram_a_out = a_read_val_sig_0[6:0];
+  assign bram_b_out = b_read_val_sig_0[7:0];
   design_1 design_1_i
-       (.ddr2_sdram_addr(ddr2_sdram_addr),
+       (.a_read_val_sig_0(a_read_val_sig_0),
+        .b_read_val_sig_0(b_read_val_sig_0),
+        .ddr2_sdram_addr(ddr2_sdram_addr),
         .ddr2_sdram_ba(ddr2_sdram_ba),
         .ddr2_sdram_cas_n(ddr2_sdram_cas_n),
         .ddr2_sdram_ck_n(ddr2_sdram_ck_n),
@@ -83,6 +105,8 @@ module design_1_wrapper
         .ddr2_sdram_we_n(ddr2_sdram_we_n),
         .reset(reset),
         .sys_clk_i(sys_clk_i),
+        .test_pass_0(test_pass_0),
+        .tester_0(tester_0),
         .usb_uart_rxd(usb_uart_rxd),
         .usb_uart_txd(usb_uart_txd));
 endmodule

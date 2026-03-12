@@ -323,7 +323,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2a78d19d</spirit:value>
+            <spirit:value>2f980e68</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -339,7 +339,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2a78d19d</spirit:value>
+            <spirit:value>2f980e68</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -379,6 +379,429 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>a_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>a_we</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>a_addr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>a_din</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>a_dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b_we</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b_addr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b_din</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b_dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_ena</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_wea</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_addra</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_dina</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_douta</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rsta</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_enb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_web</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_addrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_dinb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_doutb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_rstb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_addr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_din</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_we</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bram_dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
@@ -819,6 +1242,40 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>a_read_val_sig</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b_read_val_sig</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:choices>
@@ -834,7 +1291,7 @@
       <spirit:file>
         <spirit:name>mem_controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_2a78d19d</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_2f980e68</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -891,8 +1348,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>mem_controller_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>23</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-03-03T19:56:08Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>40</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-12T01:09:59Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1dcc8a87_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
@@ -1179,6 +1636,268 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@793adb5f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7fffc7ae_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4ffd9f36_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aeadd8a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@621103dd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60030c35_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f7d037d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463a05_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18aeed2e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f12e31e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fed89fc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2971a196_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77e1fb06_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d28c1f5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b50f6e7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3499aab2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f3a1ad0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2333facf_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34fda429_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60be2013_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a447850_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74fe1ca_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@371984ff_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f772ad1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a376939_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1069baa0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5143f9d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b2f395c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4977413b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5af9de64_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cd3874b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f3000b9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49c749db_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76d8f0c9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@226289ad_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d279fcd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@576dfb30_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@591799eb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2811569_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33046b40_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@604c2f58_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@394d393c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ba28407_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93aec9d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1152c3e4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4f008d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@674f8ef8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@339ace99_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42bc86ae_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fe2827c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f236611_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32ef6dc9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14e1a096_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43697adc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7358a491_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72b7935d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@235595d1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@719bc20e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@732af596_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@297b0cb5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b6cb5b7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fdeb1a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@155a4547_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50fca2c0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52f77c69_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36c41631_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@742832_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5d59e0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44ae9ede_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fd1f8f9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78a72ad4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48e3767f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49552a25_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7000079_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@465a28cd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28db62de_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24a1d0e2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33213f5d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c53c9a6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38a09550_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20c93889_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438c9cba_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dc91cf2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dae2f37_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6361a986_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14eaa804_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73afba16_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24f3022e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d16862b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64cc20ca_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fe00440_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f9497b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f09f151_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1813f4a0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a23ae3b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f8a1ced_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65f5a905_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@775f1e41_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@102fbb4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51e9d4fb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@528aae2e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e04cbc8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539725cb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@186bcff4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@595353a4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6930ad73_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d76927c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@131011ca_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36aed2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cb84649_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c789fb9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a8be8f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6edec3f3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f696806_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4104749c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a299497_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1439475d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25406e73_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bf90c5f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd0eb20_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ccc9c97_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34a37708_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@688fcd59_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16cb45f9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dde4add_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2398b477_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4071336e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2614455_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65b6c77a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b1f53fe_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ad69909_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65ddc197_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7487b978_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@611c379e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47bae049_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34f4315b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b271ae0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dca5cec_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4153b797_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec8ee84_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7121bb78_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ff9715_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cb27ef1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e498736_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f24203a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32a1c6c0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d56a4f1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7faf7ce6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@664742bb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5217d9a3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13520171_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ecabbb1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66dc75af_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f21912a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a25691d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d1cd0e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f386b83_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75fa29be_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2394bcc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df51b5b_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d8b636_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@469fb9fc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9d71289_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b839e5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@288a9f0d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7519e481_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b336d5a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1900340_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2257e664_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@431c82c3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b205576_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@120836ee_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39ef6d89_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aecee16_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6edadb62_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1950f503_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72f9d84_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a7b994a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@512ccd04_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57933af9_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5079bd47_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fc1da41_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41606c62_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75701245_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3088d964_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6269fa62_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aca161_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bf8219_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1671355a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3241f7ee_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22461339_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11cdd15a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d0c2d48_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c156d40_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54975c70_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2444859d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e5e8d03_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a79990f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@326caf25_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@593a1606_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18221b5f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15d6c6c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb7c6c6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a099ea5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@582f3c72_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c4c62_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@300d77cc_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4053c2e1_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49318bd7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cb957ce_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40eb160d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f15990f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ed0351_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db7c6e8_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25233332_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7206e0c2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c7cc372_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c458d99_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11019e1f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73a503c2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e82058_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64368827_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e8390_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c92ebdb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f74787f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@793cac96_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a0bcae0_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1017f29d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ac37b77_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47a91e5f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db698e3_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@196337da_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d4b9490_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263b9b2c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c8d819a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45718624_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59ce117c_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62bac8df_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14919819_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75791c41_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26e0e00d_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25cf8c9e_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1328fb2f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f198faa_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd7f825_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45f254e4_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64380a94_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c715308_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18df6687_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b295656_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b685ebb_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61f03e4f_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ff74392_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@111041d7_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d20b822_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c68304_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bed79e2_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35a7d7f6_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@522aa9fd_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19429e7a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ce5b3c5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@194d083a_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bf0ed79_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd1b643_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@333f14a5_ARCHIVE_LOCATION">c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
@@ -1186,8 +1905,8 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="560e8428"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="fa820a90"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="f2afdf52"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ee2fec1"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="268cdc57"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a80d7170"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="cf08f375"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="de7d1d3b"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

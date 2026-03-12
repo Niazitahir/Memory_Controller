@@ -1,14 +1,13 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7e9747022f0c4f078fbf0ef072b89216 --incr --debug typical --relax --mt 2 -L microblaze_v11_0_0 -L xil_defaultlib -L lmb_v10_v3_0_9 -L lmb_bram_if_cntlr_v4_0_15 -L blk_mem_gen_v8_4_2 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_12 -L xlconcat_v2_1_1 -L mdm_v3_2_15 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_22 -L axi_vip_v1_1_4 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_1_0 -L axi_protocol_converter_v2_1_18 -L axi_clock_converter_v2_1_17 -L axi_dwidth_converter_v2_1_18 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot part3_tb_behav xil_defaultlib.part3_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7e9747022f0c4f078fbf0ef072b89216 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_0 -L lmb_v10_v3_0_9 -L lmb_bram_if_cntlr_v4_0_15 -L blk_mem_gen_v8_4_2 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_12 -L xlconcat_v2_1_1 -L mdm_v3_2_15 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_22 -L axi_vip_v1_1_4 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_1_0 -L axi_protocol_converter_v2_1_18 -L axi_clock_converter_v2_1_17 -L axi_dwidth_converter_v2_1_18 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot part3_tb_behav xil_defaultlib.part3_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'n' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/ipshared/fc61/mem_controller.v:100]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axi_arready' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2740]
-WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 320 for port 's_axi_rdata' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2757]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axi_rlast' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2758]
-WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 10 for port 's_axi_rresp' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2760]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axi_rvalid' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2761]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axi_arready' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2800]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 320 for port 's_axi_rdata' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2817]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axi_rlast' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2818]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 10 for port 's_axi_rresp' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2820]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 's_axi_rvalid' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/sim/design_1.v:2821]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 1024 for port 'dbg_poc' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig_sim.v:1320]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_phase_locked_lanes' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
@@ -17,6 +16,7 @@ WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for
 WARNING: [VRFC 10-3705] select index 2 into 'g7s_cc_rst_nsckt.arst_sync_wr' is out of bounds [/wrk/2018.sub/2018.3.1/continuous/2019_03_26_2489853/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_2/simulation/fifo_generator_vlog_beh.v:4830]
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/bram_test.v" Line 1. Module bram_test doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1fs
 Compiling package std.standard
@@ -81,6 +81,14 @@ Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
 Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_1
+Compiling module xil_defaultlib.bram_test
+Compiling module xil_defaultlib.design_1_bram_test_0_0
 Compiling module unisims_ver.IBUF
 Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
 Compiling module unisims_ver.BUFG
@@ -107,11 +115,12 @@ Compiling architecture imp of entity mdm_v3_2_15.JTAG_CONTROL [\JTAG_CONTROL(c_t
 Compiling architecture imp of entity mdm_v3_2_15.MDM_Core [\MDM_Core(c_target=non_rtl,c_jta...]
 Compiling architecture imp of entity mdm_v3_2_15.MDM [\MDM(c_family="artix7",c_bscanid...]
 Compiling architecture design_1_mdm_1_0_arch of entity xil_defaultlib.design_1_mdm_1_0 [design_1_mdm_1_0_default]
+Compiling module xil_defaultlib.bram_driver_stimulus
+Compiling module xil_defaultlib.bram_dualport_driver
 Compiling module xil_defaultlib.axi_lite_slave_default
 Compiling module xil_defaultlib.axi_lite_master
-Compiling module xil_defaultlib.lsr532
 Compiling module xil_defaultlib.mem_controller
-Compiling module xil_defaultlib.design_1_mem_controller_0_0
+Compiling module xil_defaultlib.design_1_mem_controller_0_1
 Compiling architecture imp of entity microblaze_v11_0_0.DAXI_interface [\DAXI_interface(c_data_size=32,c...]
 Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101011000000...]
 Compiling architecture imp of entity microblaze_v11_0_0.MB_LUT5 [\MB_LUT5(c_target=artix7,init="1...]

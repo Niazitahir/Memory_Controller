@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-//Date        : Tue Mar  3 15:05:49 2026
+//Date        : Wed Mar 11 21:15:19 2026
 //Host        : DESKTOP-CDKE44D running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,9 +9,11 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=46,numReposBlks=34,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=6,da_clkrst_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=48,numReposBlks=36,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"da_axi4_cnt\"\"\"=6,\"\"\"da_board_cnt\"\"\"=6,\"\"\"da_clkrst_cnt\"\"\"=4,\"\"\"da_mb_cnt\"\"\"=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   (ddr2_sdram_addr,
+   (a_read_val_sig_0,
+    b_read_val_sig_0,
+    ddr2_sdram_addr,
     ddr2_sdram_ba,
     ddr2_sdram_cas_n,
     ddr2_sdram_ck_n,
@@ -27,8 +29,12 @@ module design_1
     ddr2_sdram_we_n,
     reset,
     sys_clk_i,
+    test_pass_0,
+    tester_0,
     usb_uart_rxd,
     usb_uart_txd);
+  output [31:0]a_read_val_sig_0;
+  output [31:0]b_read_val_sig_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 ddr2_sdram ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ddr2_sdram, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) output [12:0]ddr2_sdram_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 ddr2_sdram BA" *) output [2:0]ddr2_sdram_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 ddr2_sdram CAS_N" *) output ddr2_sdram_cas_n;
@@ -45,6 +51,8 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 ddr2_sdram WE_N" *) output ddr2_sdram_we_n;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLK_I CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLK_I, CLK_DOMAIN design_1_sys_clk_i, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input sys_clk_i;
+  output test_pass_0;
+  input tester_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart RxD" *) input usb_uart_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 usb_uart TxD" *) output usb_uart_txd;
 
@@ -77,6 +85,13 @@ module design_1
   wire axi_vip_0_M_AXI_WREADY;
   wire [3:0]axi_vip_0_M_AXI_WSTRB;
   wire axi_vip_0_M_AXI_WVALID;
+  wire [31:0]blk_mem_gen_1_douta;
+  wire [31:0]blk_mem_gen_1_doutb;
+  wire [31:0]bram_test_0_bram_addr;
+  wire [31:0]bram_test_0_bram_din;
+  wire bram_test_0_bram_en;
+  wire [3:0]bram_test_0_bram_we;
+  wire bram_test_0_test_pass;
   wire clk_wiz_0_clk_out1;
   wire mdm_1_debug_sys_rst;
   wire [31:0]mem_controller_0_M_AXI_AWADDR;
@@ -89,6 +104,17 @@ module design_1
   wire mem_controller_0_M_AXI_WREADY;
   wire [3:0]mem_controller_0_M_AXI_WSTRB;
   wire mem_controller_0_M_AXI_WVALID;
+  wire [31:0]mem_controller_0_a_read_val_sig;
+  wire [31:0]mem_controller_0_b_read_val_sig;
+  wire [3:0]mem_controller_0_bram_addra;
+  wire [3:0]mem_controller_0_bram_addrb;
+  wire [31:0]mem_controller_0_bram_dina;
+  wire [31:0]mem_controller_0_bram_dinb;
+  wire [31:0]mem_controller_0_bram_dout;
+  wire mem_controller_0_bram_ena;
+  wire mem_controller_0_bram_enb;
+  wire [3:0]mem_controller_0_bram_wea;
+  wire [3:0]mem_controller_0_bram_web;
   wire microblaze_0_Clk;
   wire [31:0]microblaze_0_M_AXI_DC_ARADDR;
   wire [1:0]microblaze_0_M_AXI_DC_ARBURST;
@@ -315,8 +341,11 @@ module design_1
   wire rst_mig_7series_0_81M_mb_reset;
   wire [0:0]rst_mig_7series_0_81M_peripheral_aresetn;
   wire sys_clk_i_1;
+  wire tester_0_1;
 
+  assign a_read_val_sig_0[31:0] = mem_controller_0_a_read_val_sig;
   assign axi_uartlite_0_UART_RxD = usb_uart_rxd;
+  assign b_read_val_sig_0[31:0] = mem_controller_0_b_read_val_sig;
   assign ddr2_sdram_addr[12:0] = mig_7series_0_DDR2_ADDR;
   assign ddr2_sdram_ba[2:0] = mig_7series_0_DDR2_BA;
   assign ddr2_sdram_cas_n = mig_7series_0_DDR2_CAS_N;
@@ -330,6 +359,8 @@ module design_1
   assign ddr2_sdram_we_n = mig_7series_0_DDR2_WE_N;
   assign reset_1 = reset;
   assign sys_clk_i_1 = sys_clk_i;
+  assign test_pass_0 = bram_test_0_test_pass;
+  assign tester_0_1 = tester_0;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0xC0000000 32 > design_1 blk_mem_gen_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
@@ -385,7 +416,6 @@ module design_1
         .s_axi_wstrb(microblaze_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
-  /* Enter Comments here */
   design_1_axi_vip_0_0 axi_vip_0
        (.aclk(microblaze_0_Clk),
         .aresetn(rst_mig_7series_0_81M_peripheral_aresetn),
@@ -416,6 +446,30 @@ module design_1
         .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
         .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
         .wea(axi_bram_ctrl_0_BRAM_PORTA_WE));
+  design_1_blk_mem_gen_0_1 blk_mem_gen_1
+       (.addra(mem_controller_0_bram_addra),
+        .addrb(mem_controller_0_bram_addrb),
+        .clka(microblaze_0_Clk),
+        .clkb(microblaze_0_Clk),
+        .dina(mem_controller_0_bram_dina),
+        .dinb(mem_controller_0_bram_dinb),
+        .douta(blk_mem_gen_1_douta),
+        .doutb(blk_mem_gen_1_doutb),
+        .ena(mem_controller_0_bram_ena),
+        .enb(mem_controller_0_bram_enb),
+        .wea(mem_controller_0_bram_wea[0]),
+        .web(mem_controller_0_bram_web[0]));
+  design_1_bram_test_0_0 bram_test_0
+       (.bram_addr(bram_test_0_bram_addr),
+        .bram_din(bram_test_0_bram_din),
+        .bram_dout(mem_controller_0_bram_dout),
+        .bram_en(bram_test_0_bram_en),
+        .bram_ready(1'b0),
+        .bram_we(bram_test_0_bram_we),
+        .clk(microblaze_0_Clk),
+        .reset_n(rst_mig_7series_0_81M_peripheral_aresetn),
+        .test_pass(bram_test_0_test_pass),
+        .tester(tester_0_1));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sys_clk_i_1),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -431,7 +485,7 @@ module design_1
         .Dbg_TDO_0(microblaze_0_debug_TDO),
         .Dbg_Update_0(microblaze_0_debug_UPDATE),
         .Debug_SYS_Rst(mdm_1_debug_sys_rst));
-  design_1_mem_controller_0_0 mem_controller_0
+  design_1_mem_controller_0_1 mem_controller_0
        (.M_AXI_AWADDR(mem_controller_0_M_AXI_AWADDR),
         .M_AXI_AWREADY(mem_controller_0_M_AXI_AWREADY),
         .M_AXI_AWVALID(mem_controller_0_M_AXI_AWVALID),
@@ -459,8 +513,33 @@ module design_1
         .S_AXI_WREADY(microblaze_0_axi_periph_M04_AXI_WREADY),
         .S_AXI_WSTRB(microblaze_0_axi_periph_M04_AXI_WSTRB),
         .S_AXI_WVALID(microblaze_0_axi_periph_M04_AXI_WVALID),
+        .a_addr({1'b0,1'b0,1'b0,1'b0}),
+        .a_din({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .a_en(1'b0),
+        .a_read_val_sig(mem_controller_0_a_read_val_sig),
+        .a_we(1'b0),
         .aclk(microblaze_0_Clk),
-        .aresetn(rst_mig_7series_0_81M_peripheral_aresetn));
+        .aresetn(rst_mig_7series_0_81M_peripheral_aresetn),
+        .b_addr({1'b0,1'b0,1'b0,1'b0}),
+        .b_din({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .b_en(1'b0),
+        .b_read_val_sig(mem_controller_0_b_read_val_sig),
+        .b_we(1'b0),
+        .bram_addr(bram_test_0_bram_addr),
+        .bram_addra(mem_controller_0_bram_addra),
+        .bram_addrb(mem_controller_0_bram_addrb),
+        .bram_din(bram_test_0_bram_din),
+        .bram_dina(mem_controller_0_bram_dina),
+        .bram_dinb(mem_controller_0_bram_dinb),
+        .bram_dout(mem_controller_0_bram_dout),
+        .bram_douta(blk_mem_gen_1_douta),
+        .bram_doutb(blk_mem_gen_1_doutb),
+        .bram_en(bram_test_0_bram_en),
+        .bram_ena(mem_controller_0_bram_ena),
+        .bram_enb(mem_controller_0_bram_enb),
+        .bram_we(bram_test_0_bram_we),
+        .bram_wea(mem_controller_0_bram_wea),
+        .bram_web(mem_controller_0_bram_web));
   (* BMM_INFO_PROCESSOR = "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr design_1 axi_bram_ctrl_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
   design_1_microblaze_0_0 microblaze_0

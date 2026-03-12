@@ -11,124 +11,131 @@
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/mem'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/bram_test'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 424.812 ; gain = 71.199
 Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17252 
+INFO: Helper process launched with PID 24984 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 529.887 ; gain = 105.406
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 532.262 ; gain = 107.449
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (2#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vip_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_axi_vip_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vip_0_0' (3#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_axi_vip_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (4#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' requires 8 connections, but only 7 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:411]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_clk_wiz_0_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' requires 4 connections, but only 3 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:419]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (6#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mem_controller_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_mem_controller_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mem_controller_0_0' (7#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_mem_controller_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (8#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_1_microblaze_0_0' requires 126 connections, but only 108 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:466]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (9#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:919]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2770]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (10#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (11#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3121]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (12#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2770]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3178]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (13#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3178]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3450]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (14#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (15#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_1_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3801]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (16#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3450]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3858]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (17#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (18#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (19#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3858]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4276]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (20#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_ds_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (21#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_3_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_3' requires 56 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4627]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (22#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4276]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4918]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (23#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_4_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (24#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_0' requires 72 connections, but only 70 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5233]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (25#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4918]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_2REGHR' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5306]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (26#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_1_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_1' requires 72 connections, but only 70 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5585]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_2REGHR' (27#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5306]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1R40M8T' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5658]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (28#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_2_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_2' requires 34 connections, but only 33 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5793]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1R40M8T' (29#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5658]
-INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_3DF69O' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5829]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_5' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_5' (30#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_5_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_3' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_3' (31#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_3_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_3' requires 72 connections, but only 70 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6144]
-INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_3DF69O' (32#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5829]
-INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_1TRPPG8' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6217]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_6' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_6' (33#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_pc_6_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_4' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_4' (34#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_auto_us_4_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_4' requires 40 connections, but only 39 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6396]
-INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_1TRPPG8' (35#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6217]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (36#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (4) of port connection 's_axi_arready' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2741]
-WARNING: [Synth 8-689] width (256) of port connection 's_axi_rdata' does not match port width (320) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2758]
-WARNING: [Synth 8-689] width (4) of port connection 's_axi_rlast' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2759]
-WARNING: [Synth 8-689] width (8) of port connection 's_axi_rresp' does not match port width (10) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2761]
-WARNING: [Synth 8-689] width (4) of port connection 's_axi_rvalid' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2762]
-WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 78 connections, but only 76 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2691]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (37#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:919]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4684]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (38#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (39#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4830]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (40#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (41#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4876]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (42#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_lmb_bram_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4901]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (43#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4684]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (2#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vip_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_axi_vip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vip_0_0' (3#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_axi_vip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (4#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' requires 8 connections, but only 7 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:441]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_1' (5#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_bram_test_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_bram_test_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_bram_test_0_0' (6#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_bram_test_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (7#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' requires 4 connections, but only 3 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:473]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (8#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mem_controller_0_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_mem_controller_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mem_controller_0_1' (9#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_mem_controller_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'mem_controller_0' of module 'design_1_mem_controller_0_1' requires 58 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:488]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (10#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_1_microblaze_0_0' requires 126 connections, but only 108 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:545]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (11#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:998]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2849]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (12#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (13#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3200]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (14#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2849]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3257]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (15#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3257]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3529]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (16#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (17#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3880]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (18#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3529]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3937]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (19#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (20#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (21#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3937]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4355]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (22#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (23#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_3' requires 56 connections, but only 54 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4706]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (24#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4355]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4997]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (25#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (26#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_0' requires 72 connections, but only 70 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5312]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (27#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4997]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_2REGHR' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5385]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (28#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_1' requires 72 connections, but only 70 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5664]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_2REGHR' (29#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5385]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1R40M8T' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5737]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (30#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_2' requires 34 connections, but only 33 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5872]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1R40M8T' (31#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5737]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_3DF69O' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5908]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_5' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_5' (32#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_3' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_3' (33#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_3' requires 72 connections, but only 70 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6223]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_3DF69O' (34#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5908]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_1TRPPG8' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6296]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_6' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_6' (35#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_4' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_4' (36#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_auto_us_4_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_4' requires 40 connections, but only 39 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6475]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_1TRPPG8' (37#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6296]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (38#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 's_axi_arready' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2820]
+WARNING: [Synth 8-689] width (256) of port connection 's_axi_rdata' does not match port width (320) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2837]
+WARNING: [Synth 8-689] width (4) of port connection 's_axi_rlast' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2838]
+WARNING: [Synth 8-689] width (8) of port connection 's_axi_rresp' does not match port width (10) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2840]
+WARNING: [Synth 8-689] width (4) of port connection 's_axi_rvalid' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2841]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 78 connections, but only 76 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:2770]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (39#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:998]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4763]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (40#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (41#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4909]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (42#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (43#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4955]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (44#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4980]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (45#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4763]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -165,16 +172,16 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/kh
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 1 - type: integer 
 	Parameter NUM_PORTS bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (44#1) [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (45#1) [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_mig_7series_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (46#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_mig_7series_0_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' requires 66 connections, but only 55 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:852]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_81M_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_81M_0' (47#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-17344-DESKTOP-CDKE44D/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_mig_7series_0_81M' of module 'design_1_rst_mig_7series_0_81M_0' requires 10 connections, but only 8 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:908]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (48#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (49#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (46#1) [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (47#1) [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (48#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' requires 66 connections, but only 55 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:931]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_81M_0' [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_81M_0' (49#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-18268-DESKTOP-CDKE44D/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_mig_7series_0_81M' of module 'design_1_rst_mig_7series_0_81M_0' requires 10 connections, but only 8 given [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:987]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (50#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (51#1) [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In1[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In2[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In3[0]
@@ -277,7 +284,7 @@ WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ACLK
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 587.410 ; gain = 162.930
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 590.406 ; gain = 165.594
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -290,10 +297,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 587.410 ; gain = 162.930
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 590.406 ; gain = 165.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 587.410 ; gain = 162.930
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 590.406 ; gain = 165.594
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -326,14 +333,18 @@ Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/D
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/design_1_mig_7series_0_0_in_context.xdc] for cell 'design_1_i/mig_7series_0'
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
-Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mem_controller_0_0/design_1_mem_controller_0_0/design_1_mem_controller_0_0_in_context.xdc] for cell 'design_1_i/mem_controller_0'
-Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mem_controller_0_0/design_1_mem_controller_0_0/design_1_mem_controller_0_0_in_context.xdc] for cell 'design_1_i/mem_controller_0'
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_vip_0_0/design_1_axi_vip_0_0/design_1_axi_vip_0_0_in_context.xdc] for cell 'design_1_i/axi_vip_0'
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_vip_0_0/design_1_axi_vip_0_0/design_1_axi_vip_0_0_in_context.xdc] for cell 'design_1_i/axi_vip_0'
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_bram_test_0_0/design_1_bram_test_0_0/design_1_bram_test_0_0_in_context.xdc] for cell 'design_1_i/bram_test_0'
+Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_bram_test_0_0/design_1_bram_test_0_0/design_1_bram_test_0_0_in_context.xdc] for cell 'design_1_i/bram_test_0'
+Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mem_controller_0_1/design_1_mem_controller_0_1/design_1_mem_controller_0_1_in_context.xdc] for cell 'design_1_i/mem_controller_0'
+Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mem_controller_0_1/design_1_mem_controller_0_1/design_1_mem_controller_0_1_in_context.xdc] for cell 'design_1_i/mem_controller_0'
+Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_1'
+Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_1'
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_us'
@@ -367,31 +378,134 @@ Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR
 Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
 Parsing XDC File [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[6]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:30]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[11]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:31]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[24]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:32]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[25]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:33]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[28]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:34]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[30]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:35]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[8]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:36]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[2]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:37]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[3]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:38]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[31]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:39]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[5]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:40]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[13]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[15]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:42]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[19]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[22]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[26]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[7]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[10]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[18]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[20]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[12]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:50]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[0]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[1]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[23]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:53]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[29]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:54]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[27]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:55]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[4]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[9]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[14]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[16]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[17]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[21]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[6]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[1]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[8]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[9]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:65]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[11]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[21]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[31]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[22]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[23]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[24]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[0]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:72]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[7]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:73]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[10]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:74]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[15]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[18]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[19]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[2]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:78]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[3]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[4]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[13]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:81]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[14]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[16]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[20]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[29]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:85]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[27]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:86]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[25]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:87]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[28]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[26]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:89]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[5]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:90]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[12]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:91]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[17]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[30]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[5]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[0]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:95]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[3]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[8]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[11]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[13]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:99]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[20]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[27]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[28]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[29]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:103]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[4]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:104]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[6]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:105]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[9]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:106]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[10]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:107]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[14]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:108]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[19]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:109]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[24]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[25]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[2]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[7]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[17]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[18]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:115]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[23]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:116]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[30]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:117]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[1]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:118]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[12]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:119]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[15]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[16]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[21]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[22]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:123]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[26]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:124]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_0/dina[31]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:125]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/axi_bram_ctrl_0/s_axi_awaddr[1]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:127]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/axi_bram_ctrl_0/s_axi_awaddr[4]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:128]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/axi_bram_ctrl_0/s_axi_awaddr[7]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:129]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/axi_bram_ctrl_0/s_axi_awaddr[8]'. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:130]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:130]
 Finished Parsing XDC File [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.660 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 935.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.660 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 935.117 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 935.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 938.660 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 938.660 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_1' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -490,6 +604,9 @@ Applied set_property IO_BUFFER_TYPE = NONE for ddr2_sdram_we_n. (constraint file
 Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_sdram_we_n. (constraint file  c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/design_1_mig_7series_0_0_in_context.xdc, line 98).
 Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_i. (constraint file  c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_i. (constraint file  c:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property MARK_DEBUG = true for design_1_i/mem_controller_0_M_AXI_WDATA[3]. (constraint file  C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc, line 304).
+Applied set_property MARK_DEBUG = true for design_1_i/mem_controller_0_M_AXI_AWADDR[20]. (constraint file  C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc, line 310).
+Applied set_property MARK_DEBUG = true for design_1_i/mem_controller_0_M_AXI_WSTRB[0]. (constraint file  C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc, line 331).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
@@ -506,10 +623,12 @@ Applied set_property DONT_TOUCH = true for design_1_i/rst_mig_7series_0_81M. (co
 Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/mig_7series_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/mem_controller_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_vip_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/bram_test_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mem_controller_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
@@ -527,10 +646,12 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m0
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mem_controller_0'. This will prevent further optimization [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:488]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'microblaze_0_axi_periph'. This will prevent further optimization [C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:680]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -566,7 +687,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -591,13 +712,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/axi_bram_ctrl_0/bram_clk_a' to pin 'design_1_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
 INFO: [Synth 8-5819] Moved 12 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -609,7 +730,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -633,7 +754,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -646,7 +767,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -658,25 +779,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -707,18 +828,20 @@ Report BlackBoxes:
 |19    |design_1_axi_uartlite_0_0        |         1|
 |20    |design_1_axi_vip_0_0             |         1|
 |21    |design_1_blk_mem_gen_0_0         |         1|
-|22    |design_1_clk_wiz_0_0             |         1|
-|23    |design_1_mdm_1_0                 |         1|
-|24    |design_1_mem_controller_0_0      |         1|
-|25    |design_1_microblaze_0_0          |         1|
-|26    |design_1_microblaze_0_axi_intc_0 |         1|
-|27    |design_1_mig_7series_0_0         |         1|
-|28    |design_1_rst_mig_7series_0_81M_0 |         1|
-|29    |design_1_dlmb_bram_if_cntlr_0    |         1|
-|30    |design_1_dlmb_v10_0              |         1|
-|31    |design_1_ilmb_bram_if_cntlr_0    |         1|
-|32    |design_1_ilmb_v10_0              |         1|
-|33    |design_1_lmb_bram_0              |         1|
+|22    |design_1_blk_mem_gen_0_1         |         1|
+|23    |design_1_bram_test_0_0           |         1|
+|24    |design_1_clk_wiz_0_0             |         1|
+|25    |design_1_mdm_1_0                 |         1|
+|26    |design_1_mem_controller_0_1      |         1|
+|27    |design_1_microblaze_0_0          |         1|
+|28    |design_1_microblaze_0_axi_intc_0 |         1|
+|29    |design_1_mig_7series_0_0         |         1|
+|30    |design_1_rst_mig_7series_0_81M_0 |         1|
+|31    |design_1_dlmb_bram_if_cntlr_0    |         1|
+|32    |design_1_dlmb_v10_0              |         1|
+|33    |design_1_ilmb_bram_if_cntlr_0    |         1|
+|34    |design_1_ilmb_v10_0              |         1|
+|35    |design_1_lmb_bram_0              |         1|
 +------+---------------------------------+----------+
 
 Report Cell Usage: 
@@ -745,29 +868,31 @@ Report Cell Usage:
 |18    |design_1_axi_uartlite_0_0        |     1|
 |19    |design_1_axi_vip_0_0             |     1|
 |20    |design_1_blk_mem_gen_0_0         |     1|
-|21    |design_1_clk_wiz_0_0             |     1|
-|22    |design_1_dlmb_bram_if_cntlr_0    |     1|
-|23    |design_1_dlmb_v10_0              |     1|
-|24    |design_1_ilmb_bram_if_cntlr_0    |     1|
-|25    |design_1_ilmb_v10_0              |     1|
-|26    |design_1_lmb_bram_0              |     1|
-|27    |design_1_mdm_1_0                 |     1|
-|28    |design_1_mem_controller_0_0      |     1|
-|29    |design_1_microblaze_0_0          |     1|
-|30    |design_1_microblaze_0_axi_intc_0 |     1|
-|31    |design_1_mig_7series_0_0         |     1|
-|32    |design_1_rst_mig_7series_0_81M_0 |     1|
-|33    |design_1_xbar_0                  |     1|
-|34    |IBUF                             |     2|
-|35    |OBUF                             |     1|
+|21    |design_1_blk_mem_gen_0_1         |     1|
+|22    |design_1_bram_test_0_0           |     1|
+|23    |design_1_clk_wiz_0_0             |     1|
+|24    |design_1_dlmb_bram_if_cntlr_0    |     1|
+|25    |design_1_dlmb_v10_0              |     1|
+|26    |design_1_ilmb_bram_if_cntlr_0    |     1|
+|27    |design_1_ilmb_v10_0              |     1|
+|28    |design_1_lmb_bram_0              |     1|
+|29    |design_1_mdm_1_0                 |     1|
+|30    |design_1_mem_controller_0_1      |     1|
+|31    |design_1_microblaze_0_0          |     1|
+|32    |design_1_microblaze_0_axi_intc_0 |     1|
+|33    |design_1_mig_7series_0_0         |     1|
+|34    |design_1_rst_mig_7series_0_81M_0 |     1|
+|35    |design_1_xbar_0                  |     1|
+|36    |IBUF                             |     3|
+|37    |OBUF                             |    17|
 +------+---------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  6067|
-|2     |  design_1_i                  |design_1                              |  6064|
+|1     |top                           |                                      |  6462|
+|2     |  design_1_i                  |design_1                              |  6442|
 |3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |  4426|
 |4     |      m00_couplers            |m00_couplers_imp_8RVYHO               |   397|
 |5     |      m02_couplers            |m02_couplers_imp_7ANRHB               |   397|
@@ -782,25 +907,25 @@ Report Instance Areas:
 |14    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 935.117 ; gain = 162.930
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 935.117 ; gain = 510.637
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 938.660 ; gain = 165.594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 938.660 ; gain = 513.848
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 948.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 946.570 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-125 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+133 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 948.270 ; gain = 523.789
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 948.270 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 946.578 ; gain = 521.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 946.578 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/khanm/AppData/Roaming/Xilinx/Vivado/proj/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar  3 15:08:54 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 11 21:28:38 2026...

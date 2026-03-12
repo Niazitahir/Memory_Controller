@@ -173,7 +173,6 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../bd/design_1/sim/design_1.v" \
 "../../../bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" \
 "../../../bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" \
 "../../../bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" \
@@ -276,8 +275,6 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../DDR_GOLDEN.srcs/sources
 "../../../bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0.v" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
-"../../../bd/design_1/ipshared/028a/mem_controller.v" \
-"../../../bd/design_1/ip/design_1_mem_controller_0_0/sim/design_1_mem_controller_0_0.v" \
 
 vlog -work xil_defaultlib -64 -incr -sv -L axi_vip_v1_1_4 -L xilinx_vip "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_axi_vip_0_0/sim/design_1_axi_vip_0_0_pkg.sv" \
@@ -299,6 +296,11 @@ vcom -work xil_defaultlib -64 -93 \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_bram_test_0_0/sim/design_1_bram_test_0_0.v" \
+"../../../bd/design_1/ipshared/5907/mem_controller.v" \
+"../../../bd/design_1/ip/design_1_mem_controller_0_1/sim/design_1_mem_controller_0_1.v" \
+"../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
 
 vlog -work axi_protocol_converter_v2_1_18 -64 -incr "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/85a3" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
